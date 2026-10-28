@@ -1,0 +1,53 @@
+/*
+ * Paper2People product tokens. Contrast was checked against the surfaces each token
+ * is used on; see docs/design-system.md for ratios. The decorative `--border` rule is
+ * never the only boundary of a form control; controls use `--control-border`.
+ */
+:root {
+  --canvas: #f6f4ee;
+  --surface: #fffefa;
+  --surface-muted: #eeebe3;
+  --ink: #182d2a;
+  --ink-muted: #52615c;
+  --primary: #1f5c50;
+  --primary-hover: #174a40;
+  --primary-soft: #e4eee8;
+  --caution: #855419;
+  --caution-soft: #fbf0db;
+  --critical: #963e32;
+  --critical-soft: #f8e8e2;
+  --border: #d8d8cd;
+  --control-border: #737f79;
+  --focus: #1f5c50;
+  --focus-halo: #fffefa;
+
+  --radius-control: 8px;
+  --radius-panel: 12px;
+  --shadow-overlay: 0 12px 40px -12px rgb(24 45 42 / 0.28), 0 2px 6px rgb(24 45 42 / 0.08);
+
+  --duration-fast: 140ms;
+  --duration-base: 200ms;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+
+  --gutter: 16px;
+  --container: 1240px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --gutter: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+  }
+}

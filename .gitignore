@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+!.env.example
+
+# playwright
+/test-results/
+/playwright-report/
+/blob-report/
+
+# review screenshots (regenerate: SCREENSHOTS=1 npx playwright test screenshots)
+/docs/screenshots/
